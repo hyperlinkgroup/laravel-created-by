@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Hylk\CreatedBy\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class CreatedByCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-created-by';
 
     public $description = 'My command';
 
