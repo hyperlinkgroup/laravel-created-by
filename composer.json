@@ -1,12 +1,12 @@
 {
-    "name": "hylk/laravel-created-by",
+    "name": "hyperlink/laravel-created-by",
     "description": "Annoyed by writing the created by foreign user id for every model? Use our blueprint function instead",
     "keywords": [
-        "hylk",
+        "hyperlink",
         "laravel",
         "laravel-created-by"
     ],
-    "homepage": "https://github.com/hylk/laravel-created-by",
+    "homepage": "https://github.com/hyperlinkgroup/laravel-created-by",
     "license": "MIT",
     "authors": [
         {
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Hylk\\CreatedBy\\": "src",
-            "Hylk\\CreatedBy\\Database\\Factories\\": "database/factories"
+            "Hyperlink\\CreatedBy\\": "src",
+            "Hyperlink\\CreatedBy\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Hylk\\CreatedBy\\Tests\\": "tests"
+            "Hyperlink\\CreatedBy\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -60,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Hylk\\CreatedBy\\CreatedByServiceProvider"
+                "Hyperlink\\CreatedBy\\CreatedByServiceProvider"
             ],
             "aliases": {
-                "CreatedBy": "Hylk\\CreatedBy\\Facades\\CreatedBy"
+                "CreatedBy": "Hyperlink\\CreatedBy\\Facades\\CreatedBy"
             }
         }
     },

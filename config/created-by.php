@@ -1,6 +1,6 @@
 <?php
 
-// config for Hylk/CreatedBy
+// config for Hyperlink/CreatedBy
 return [
 
 ];
