@@ -1,6 +1,6 @@
 {
     "name": "hylk/laravel-created-by",
-    "description": "Annoyed by writing the created by foreign use id for every model? Use our blueprint function instead",
+    "description": "Annoyed by writing the created by foreign user id for every model? Use our blueprint function instead",
     "keywords": [
         "hylk",
         "laravel",
