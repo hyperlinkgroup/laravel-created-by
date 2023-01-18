@@ -1,9 +1,8 @@
 # laravel-created-by
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/hylk/laravel-created-by.svg?style=flat-square)](https://packagist.org/packages/hylk/laravel-created-by)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/hylk/laravel-created-by/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/hylk/laravel-created-by/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/hylk/laravel-created-by/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/hylk/laravel-created-by/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/hylk/laravel-created-by.svg?style=flat-square)](https://packagist.org/packages/hylk/laravel-created-by)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/hyperlink/laravel-created-by.svg?style=flat-square)](https://packagist.org/packages/hyperlink/laravel-created-by)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/hyperlink/laravel-created-by/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/hyperlink/laravel-created-by/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/hyperlink/laravel-created-by.svg?style=flat-square)](https://packagist.org/packages/hyperlink/laravel-created-by)
 
 Annoyed by writing the created by foreign user id for every model? Use our blueprint function instead
 
@@ -12,7 +11,7 @@ Annoyed by writing the created by foreign user id for every model? Use our bluep
 You can install the package via composer:
 
 ```bash
-composer require hylk/laravel-created-by
+composer require hyperlink/laravel-created-by
 ```
 
 You can publish the config file with:
@@ -47,7 +46,7 @@ Schema::create('foo', function (Blueprint $table) {
 
 namespace App\Models;
 
-use Hylk\CreatedBy\WithCreatedBy;
+use Hyperlink\CreatedBy\WithCreatedBy;
 use Illuminate\Database\Eloquent\Model;
 
 class Foo extends Model

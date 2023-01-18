@@ -1,6 +1,6 @@
 <?php
 
-namespace Hylk\CreatedBy;
+namespace Hyperlink\CreatedBy;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Auth\User;

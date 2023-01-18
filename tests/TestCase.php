@@ -1,8 +1,8 @@
 <?php
 
-namespace Hylk\CreatedBy\Tests;
+namespace Hyperlink\CreatedBy\Tests;
 
-use Hylk\CreatedBy\CreatedByServiceProvider;
+use Hyperlink\CreatedBy\CreatedByServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Hylk\\CreatedBy\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Hyperlink\\CreatedBy\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

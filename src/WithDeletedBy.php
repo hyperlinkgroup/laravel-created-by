@@ -1,6 +1,6 @@
 <?php
 
-namespace Hylk\CreatedBy;
+namespace Hyperlink\CreatedBy;
 
 trait WithDeletedBy
 {

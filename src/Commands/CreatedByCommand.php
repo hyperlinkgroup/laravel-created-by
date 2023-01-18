@@ -1,6 +1,6 @@
 <?php
 
-namespace Hylk\CreatedBy\Commands;
+namespace Hyperlink\CreatedBy\Commands;
 
 use Illuminate\Console\Command;
 
