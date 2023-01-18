@@ -23,60 +23,60 @@ class CreatedByServiceProvider extends PackageServiceProvider
 
     public function packageRegistered(): void
     {
-        if (!Blueprint::hasMacro('createdBy')) {
+        if (! Blueprint::hasMacro('createdBy')) {
             Blueprint::macro('createdBy', function () {
                 $this->foreignIdFor(config('auth.providers.users.model', User::class), 'created_by')
                     ->nullable()
                     ->default(null);
             });
         }
-        if (!Blueprint::hasMacro('updatedBy')) {
+        if (! Blueprint::hasMacro('updatedBy')) {
             Blueprint::macro('updatedBy', function () {
                 $this->foreignIdFor(config('auth.providers.users.model', User::class), 'updated_by')
                     ->nullable()
                     ->default(null);
             });
         }
-        if (!Blueprint::hasMacro('deletedBy')) {
+        if (! Blueprint::hasMacro('deletedBy')) {
             Blueprint::macro('deletedBy', function () {
                 $this->foreignIdFor(config('auth.providers.users.model', User::class), 'deleted_by')
                     ->nullable()
                     ->default(null);
             });
         }
-        if (!Blueprint::hasMacro('restoredBy')) {
+        if (! Blueprint::hasMacro('restoredBy')) {
             Blueprint::macro('restoredBy', function () {
                 $this->foreignIdFor(config('auth.providers.users.model', User::class), 'restored_by')
                     ->nullable()
                     ->default(null);
             });
         }
-        if (!Blueprint::hasMacro('restoredAt')) {
+        if (! Blueprint::hasMacro('restoredAt')) {
             Blueprint::macro('restoredAt', function () {
                 $this->timestamp('restored_at')->nullable()->default(null);
             });
         }
-        if (!Blueprint::hasMacro('dropCreatedBy')) {
+        if (! Blueprint::hasMacro('dropCreatedBy')) {
             Blueprint::macro('dropCreatedBy', function () {
                 $this->dropColumn('created_by');
             });
         }
-        if (!Blueprint::hasMacro('dropUpdatedBy')) {
+        if (! Blueprint::hasMacro('dropUpdatedBy')) {
             Blueprint::macro('dropUpdatedBy', function () {
                 $this->dropColumn('updated_by');
             });
         }
-        if (!Blueprint::hasMacro('dropDeletedBy')) {
+        if (! Blueprint::hasMacro('dropDeletedBy')) {
             Blueprint::macro('dropDeletedBy', function () {
                 $this->dropColumn('deleted_by');
             });
         }
-        if (!Blueprint::hasMacro('dropRestoredBy')) {
+        if (! Blueprint::hasMacro('dropRestoredBy')) {
             Blueprint::macro('dropRestoredBy', function () {
                 $this->dropColumn('restored_by');
             });
         }
-        if (!Blueprint::hasMacro('dropRestoredAt')) {
+        if (! Blueprint::hasMacro('dropRestoredAt')) {
             Blueprint::macro('dropRestoredAt', function () {
                 $this->dropColumn('restored_at');
             });
