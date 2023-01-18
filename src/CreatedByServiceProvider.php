@@ -2,7 +2,6 @@
 
 namespace Hylk\CreatedBy;
 
-use Hylk\CreatedBy\Commands\CreatedByCommand;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Auth\User;
 use Spatie\LaravelPackageTools\Package;
