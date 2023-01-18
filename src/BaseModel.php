@@ -21,15 +21,15 @@ class BaseModel extends Model
         parent::boot();
 
         static::creating(static function ($model) {
-            if ($model->hasAttribute('created_by')) {
+            if ($model->hasAttribute('created_by') && !data_get($model, 'created_by')) {
                 $model->created_by = auth()->id();
             }
-            if ($model->hasAttribute('updated_by')) {
+            if ($model->hasAttribute('updated_by') && !data_get($model, 'updated_by')) {
                 $model->updated_by = auth()->id();
             }
         });
         static::updating(static function ($model) {
-            if ($model->hasAttribute('updated_by')) {
+            if ($model->hasAttribute('updated_by') && !data_get($model, 'updated_by')) {
                 $model->updated_by = auth()->id();
             }
         });
