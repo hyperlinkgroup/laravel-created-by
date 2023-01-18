@@ -3,6 +3,8 @@
 namespace Hylk\CreatedBy;
 
 use Hylk\CreatedBy\Commands\CreatedByCommand;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Foundation\Auth\User;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,9 +19,26 @@ class CreatedByServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-created-by')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-created-by_table')
-            ->hasCommand(CreatedByCommand::class);
+            ->hasConfigFile();
+    }
+
+    public function packageRegistered(): void
+    {
+        Blueprint::macro('createdBy', function () {
+            $this->foreignIdFor(config('auth.providers.users.model', User::class), 'created_by')
+                ->nullable()
+                ->default(null);
+        });
+        Blueprint::macro('dropCreatedBy', function () {
+            $this->dropColumn('created_by');
+        });
+        Blueprint::macro('updatedBy', function () {
+            $this->foreignIdFor(config('auth.providers.users.model', User::class), 'updated_by')
+                ->nullable()
+                ->default(null);
+        });
+        Blueprint::macro('dropUpdatedBy', function () {
+            $this->dropColumn('updated_by');
+        });
     }
 }
