@@ -7,6 +7,15 @@ use Illuminate\Support\Facades\Schema;
 
 class BaseModel extends Model
 {
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        $this->mergeFillable([
+            'created_by',
+            'updated_by',
+        ]);
+    }
+
     public static function boot()
     {
         parent::boot();
