@@ -23,21 +23,29 @@ class CreatedByServiceProvider extends PackageServiceProvider
 
     public function packageRegistered(): void
     {
-        Blueprint::macro('createdBy', function () {
-            $this->foreignIdFor(config('auth.providers.users.model', User::class), 'created_by')
-                ->nullable()
-                ->default(null);
-        });
-        Blueprint::macro('dropCreatedBy', function () {
-            $this->dropColumn('created_by');
-        });
-        Blueprint::macro('updatedBy', function () {
-            $this->foreignIdFor(config('auth.providers.users.model', User::class), 'updated_by')
-                ->nullable()
-                ->default(null);
-        });
-        Blueprint::macro('dropUpdatedBy', function () {
-            $this->dropColumn('updated_by');
-        });
+        if (!Blueprint::hasMacro('createdBy')) {
+            Blueprint::macro('createdBy', function () {
+                $this->foreignIdFor(config('auth.providers.users.model', User::class), 'created_by')
+                    ->nullable()
+                    ->default(null);
+            });
+        }
+        if (!Blueprint::hasMacro('updatedBy')) {
+            Blueprint::macro('updatedBy', function () {
+                $this->foreignIdFor(config('auth.providers.users.model', User::class), 'updated_by')
+                    ->nullable()
+                    ->default(null);
+            });
+        }
+        if (!Blueprint::hasMacro('dropCreatedBy')) {
+            Blueprint::macro('dropCreatedBy', function () {
+                $this->dropColumn('created_by');
+            });
+        }
+        if (!Blueprint::hasMacro('dropUpdatedBy')) {
+            Blueprint::macro('dropUpdatedBy', function () {
+                $this->dropColumn('updated_by');
+            });
+        }
     }
 }
