@@ -1,9 +1,11 @@
-# Annoyed by writing the created by foreign user id for every model? Use our blueprint function instead
+# laravel-created-by
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/hylk/laravel-created-by.svg?style=flat-square)](https://packagist.org/packages/hylk/laravel-created-by)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/hylk/laravel-created-by/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/hylk/laravel-created-by/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/hylk/laravel-created-by/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/hylk/laravel-created-by/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/hylk/laravel-created-by.svg?style=flat-square)](https://packagist.org/packages/hylk/laravel-created-by)
+
+Annoyed by writing the created by foreign user id for every model? Use our blueprint function instead
 
 ## Installation
 
