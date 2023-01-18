@@ -2,9 +2,9 @@
 
 namespace Hylk\CreatedBy;
 
+use Hylk\CreatedBy\Commands\CreatedByCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Hylk\CreatedBy\Commands\CreatedByCommand;
 
 class CreatedByServiceProvider extends PackageServiceProvider
 {

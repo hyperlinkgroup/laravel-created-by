@@ -2,9 +2,9 @@
 
 namespace Hylk\CreatedBy\Tests;
 
+use Hylk\CreatedBy\CreatedByServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Hylk\CreatedBy\CreatedByServiceProvider;
 
 class TestCase extends Orchestra
 {
