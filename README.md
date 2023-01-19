@@ -1,7 +1,7 @@
 # laravel-created-by
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/hyperlink/laravel-created-by.svg?style=flat-square)](https://packagist.org/packages/hyperlink/laravel-created-by)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/hyperlink/laravel-created-by/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/hyperlink/laravel-created-by/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/hyperlinkgroup/laravel-created-by/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/hyperlinkgroup/laravel-created-by/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/hyperlink/laravel-created-by.svg?style=flat-square)](https://packagist.org/packages/hyperlink/laravel-created-by)
 
 Annoyed by writing the created by foreign user id for every model? Use our blueprint function instead
