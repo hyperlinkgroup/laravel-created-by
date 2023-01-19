@@ -14,19 +14,6 @@ You can install the package via composer:
 composer require hyperlink/laravel-created-by
 ```
 
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-created-by-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
 ```php
