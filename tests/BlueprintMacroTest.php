@@ -8,8 +8,8 @@ foreach ([
     'updatedBy' => 'updated_by',
     'deletedBy' => 'deleted_by',
     'restoredBy' => 'restored_by',
-         ] as $functionName => $columnName) {
-    it('can extend the blueprint for migrations - ' . $functionName, function () use ($functionName, $columnName) {
+] as $functionName => $columnName) {
+    it('can extend the blueprint for migrations - '.$functionName, function () use ($functionName, $columnName) {
         app()->register(CreatedByServiceProvider::class);
 
         $blueprint = new Blueprint('test');
